@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/yogo.css">
+
+</head>
+
+
+<body>
+
+  <div class="overlay1"></div>
+  <header class="wow bounceInDown">
+    <a href="index3.html" class="logo logo1">Gym <span>Home</span></a>
+    <div class="toggle"><img src="img/toggle.png" alt=""></div>
+
+  </header>
+  <div class="banner">
+    <!-- navigation -->
+    <nav class="active">
+      <i class="fas fa-times" aria-hidden="true"></i>
+      <div class="logo">
+        <!-- <img src="img/logo.png" alt=""> -->
+        <span class="logo-gym">GYM</span> <span class="logo-home">HOME</span>
+      </div>
+      <div class="nav-middle">
+        <ul>
+          <li><a href="index3.html">Trang Chủ</a></li>
+          <li><a href="GymHome.html">Gym Home</a></li>
+          <li><a href="Lostdate.html">Lịch Tập</a></li>
+          <li><a href="Boxing.html">Boxing</a></li>
+          <li><a href="HlvGym.html">HLV Gym</a></li>
+          <li><a href="Promotion.html">Khuyến Mãi</a></li>
+          <li><a href="">Tuyển Dụng</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+
+
+            <i class="fas fa-user" aria-hidden="true"></i>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Đăng Nhập
+            </button>
+
+
+
+
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-cart" aria-hidden="true"></i>
+              <img class="icon-cart" src="img/giohang.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navigation -->
+    <div class="slider-text">
+      <div class="container container-banner">
+        <div class="row row-right-left">
+          <div class="col-md-6 pull-right">
+            <div class="banner-block wow slideInRight">
+              <img src="img/yoga1.png" class="img-fluid" alt="banner">
+              <div class="animation-circle-inverse left">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pull-left">
+            <div class="banner-text wow bounceInLeft">
+              <h3>Welcome To HomeYoga</h3>
+              <h1 class="heading-font">Trong Yoga 99% là thực hành </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, se do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <div class="banner-btn">
+                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Đăng Ký</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-banner"></div>
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">SIGN UP NOW</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-content-p">
+            <P>To get your Full Membership Experience.
+              Choose your preferred trial membership below.</P>
+          </div>
+          <div class="modal-body">
+            <form action="/vi/lop-hoc-yoga.html" method="post" id="cassiopeia-regiter-join-today-form"
+              accept-charset="UTF-8">
+              <div>
+                <div class="form-group">
+                  <div class="input-group"><span class="input-group-addon"><i class="fas fa-user"
+                        aria-hidden="true"></i></span><input placeholder="Full Name"
+                      class="form-control form-text required" type="text" id="edit-fullname" name="fullname" value=""
+                      size="60" maxlength="128"></div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group"><span class="input-group-addon"><i class="fa fa-phone"
+                        aria-hidden="true"></i></span><input placeholder="Phone number"
+                      class="form-control form-text required" type="text" id="edit-phonenumber" name="phonenumber"
+                      value="" size="60" maxlength="128"></div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope-o"
+                        aria-hidden="true"></i></span><input placeholder="Địa chỉ thư điện tử"
+                      class="form-control form-text required" type="text" id="edit-email" name="email" value=""
+                      size="60" maxlength="128"></div>
+                </div><input type="hidden" name="nodeId" value="28">
+                <button type="submit" id="edit-submit" name="op" value="Đăng ký tập thử"
+                  class="btn btn-default form-submit">Đăng ký tập thử</button>
+                <input type="hidden" name="form_build_id" value="form-7IXDf9G4Q5PP3QU-dwAOmiHAsicYIx-8YXwtUc3UW8Q">
+                <input type="hidden" name="form_id" value="cassiopeia_regiter_join_today_form">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class=" btn-secondary" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+  </div>
+  <!-- BLOG -->
+  <section class="blog-sec1" id="blog">
+    <div class="container container-sec1">
+      <div class="row">
+        <div class="col-md-12 wow bounceInDown" style="text-align: center;">
+          <h2 class="title">TẠI SAO CẦN TẬP YOGA</h2>
+        </div>
+        <div class="col-md-12 col-md-12-sec1">
+          <div class="owl-carousel owl-theme">
+            <div class="item wow bounceInUp" data-wow-delay="0.2s">
+              <div class="card">
+                <div class="img-icon">
+                  <img src="img/gym.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dinh dưỡng cho Gymmer</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit asectetur adipiscing elit, sed do eiusmod
+                    tempor incididun
+                  </p>
+                  <p><i class="fas fa-arrow-right"></i></p>
+
+                </div>
+              </div>
+            </div>
+            <div class="item wow bounceInUp" data-wow-delay="0.4s">
+              <div class="card">
+                <div class="img-icon">
+                  <img src="img/food.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dinh dưỡng cho Gymmer</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit asectetur adipiscing elit, sed do eiusmod
+                    tempor incididun
+                  </p>
+                  <p><i class="fas fa-arrow-right"></i></p>
+
+                </div>
+              </div>
+            </div>
+            <div class="item wow bounceInUp" data-wow-delay="0.6s">
+              <div class="card">
+                <div class="img-icon">
+                  <img src="img/multimedia.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dinh dưỡng cho Gymmer</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit asectetur adipiscing elit, sed do eiusmod
+                    tempor incididun
+                  </p>
+                  <p><i class="fas fa-arrow-right"></i></p>
+
+                </div>
+              </div>
+            </div>
+            <div class="item wow bounceInUp" data-wow-delay="0.8s">
+              <div class="card">
+                <div class="img-icon">
+                  <img src="img/equipment.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dinh dưỡng cho Gymmer</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit asectetur adipiscing elit, sed do eiusmod
+                    tempor incididun
+                  </p>
+                  <p><i class="fas fa-arrow-right"></i></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BLOG-END -->
+  <!-- SEC-2 -->
+  <section id="next-level" class="next-level">
+    <div class="container container-sec2">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="next-block wow bounceInLeft">
+            <img src="img/yoga21.png" class="img-fluid img-fluid-2" alt="banner">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="level-detail">
+            <h3 class="wow bounceInRight">Wecome HomeYoga</h3>
+            <h1 class="heading-font wow bounceInRight" data-wow-delay ="0.2s">
+              Tác dụng của Yoga !
+            </h1>
+            <p class="wow bounceInRight" data-wow-delay ="0.4s">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra
+              maecenas accumsan lacus vel facilisis.<br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+
+            <div class="banner-btn wow bounceInRight" data-wow-delay ="0.6s">
+              <a href="#">Xem Thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery common">
+    <div class="container container-gallery">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="section-head">
+            <h2 class="heading-font">Our Gallery</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="0.1s"
+              src="https://thethaokhoe.com/wp-content/uploads/2019/12/B%C3%A0i-t%E1%BA%ADp-yoga-gi%E1%BA%A3m-c%C3%A2n-%E2%80%93-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A1c-b%C3%A0i-t%E1%BA%ADp-yoga-t%E1%BA%A1i-nh%C3%A0-gi%E1%BA%A3m-m%E1%BB%A1-b%E1%BB%A5ng-cho-n%E1%BB%AF-1-765x510-1.png"
+              class="img-fluid red-left" alt="banner">
+            <a href="https://thethaokhoe.com/wp-content/uploads/2019/12/B%C3%A0i-t%E1%BA%ADp-yoga-gi%E1%BA%A3m-c%C3%A2n-%E2%80%93-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A1c-b%C3%A0i-t%E1%BA%ADp-yoga-t%E1%BA%A1i-nh%C3%A0-gi%E1%BA%A3m-m%E1%BB%A1-b%E1%BB%A5ng-cho-n%E1%BB%AF-1-765x510-1.png"
+              data-fancybox="gallery" data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="0.3s"
+              src="https://lh3.googleusercontent.com/proxy/awvzfCfJhzrk9DRAELRyz7phR1i0WeuQ5UeT-y_Sv5-MEck6gW8N5DFictxoPERaxoecZVLq3cNeZByWcfdYP-rIbvS8CX8-tqb6ryF9vfDqqPqiLFn0XixufPLJG-bqar0CHOgLfqP8ZOamXA"
+              class="img-fluid" alt="banner">
+            <a href="https://lh3.googleusercontent.com/proxy/awvzfCfJhzrk9DRAELRyz7phR1i0WeuQ5UeT-y_Sv5-MEck6gW8N5DFictxoPERaxoecZVLq3cNeZByWcfdYP-rIbvS8CX8-tqb6ryF9vfDqqPqiLFn0XixufPLJG-bqar0CHOgLfqP8ZOamXA"
+              data-fancybox="gallery" data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="0.5s" src="https://chonmuachuan.com/wp-content/uploads/2018/01/tham-tap-yoga-loai-nao-tot.jpg"
+              class="img-fluid" alt="banner">
+            <a href="https://chonmuachuan.com/wp-content/uploads/2018/01/tham-tap-yoga-loai-nao-tot.jpg"
+              data-fancybox="gallery" data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="0.7s" src="https://viknews.com/vi/wp-content/uploads/2019/05/yoga1.jpg" class="img-fluid  red-right"
+              alt="banner">
+            <a href="https://viknews.com/vi/wp-content/uploads/2019/05/yoga1.jpg" data-fancybox="gallery"
+              data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="0.9s" src="https://stylemagazine.vn/wp-content/uploads/Th%C3%B3i-quen-x%E1%BA%A5u-khi-t%E1%BA%ADp-Yoga-4.jpg"
+              class="img-fluid red-bot-left" alt="banner">
+            <a href="https://stylemagazine.vn/wp-content/uploads/Th%C3%B3i-quen-x%E1%BA%A5u-khi-t%E1%BA%ADp-Yoga-4.jpg"
+              data-fancybox="gallery" data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="1.1s"
+              src="https://image-us.eva.vn/upload/1-2019/images/2019-03-28/tap-yoga-tai-nha-voi-bai-tap-don-gian-cho-nguoi-moi-bat-dau-3-1553765334-578-width640height345.png"
+              class="img-fluid" alt="banner">
+            <a href="https://image-us.eva.vn/upload/1-2019/images/2019-03-28/tap-yoga-tai-nha-voi-bai-tap-don-gian-cho-nguoi-moi-bat-dau-3-1553765334-578-width640height345.png"
+              data-fancybox="gallery" data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="1.2s" src="https://www.thuocdantoc.org/wp-content/uploads/2019/08/bai-tap-yoga-chua-dau-vai-gay.jpg"
+              class="img-fluid " alt="banner">
+            <a href="https://www.thuocdantoc.org/wp-content/uploads/2019/08/bai-tap-yoga-chua-dau-vai-gay.jpg"
+              data-fancybox="gallery" data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="gellary-over">
+            <img class="wow bounceInUp" data-wow-delay="1.3s" src="https://hellobacsi.com/wp-content/uploads/2018/03/tap-yoga-1-e1521778041952.jpg"
+              class="img-fluid  red-right" alt="banner">
+            <a href="https://hellobacsi.com/wp-content/uploads/2018/03/tap-yoga-1-e1521778041952.jpg"
+              data-fancybox="gallery" data-caption="Caption Images 1">
+              <div class="overlay">
+                <div class="overlay_shape">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="gym-home gym-home2 ">
+    <div class="h2 wow bounceInDown">
+      <h2><span>GYM</span>YOGA </h2>
+    </div>
+    <p class="wow bounceInUp" data-wow-delay="0.3s">Giảm từ 10-30% cho học phí HLV cá nhân từ tháng 6-8/2020</p>
+  </div>
+
+
+  <!-- BEGIN-SECTION4 -->
+  <section class="section-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 col-sm-6 col-xs-12 wow bounceInUp">
+          <div class="img-col" data-wow-delay="0.1s">
+            <img src="https://thuocdantoc.vn/wp-content/uploads/2019/06/chua-benh-tri-bang-cach-tap-yoga.jpg" alt="">
+          </div>
+          <div class="content-name">
+            <div class="name">
+              ROSE-AMY
+            </div>
+            <p>WEIGHTLIFTING</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow bounceInUp" data-wow-delay="0.3s">
+          <div class="img-col">
+            <img src="https://fitnyum.com/images/2019/03/01/Fit_Blog-7_00-Thumbnail.jpg" alt="">
+          </div>
+          <div class="content-name">
+            <div class="name">
+              ROSE-AMY
+            </div>
+            <p>WEIGHTLIFTING</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow bounceInUp"  data-wow-delay="0.5s">
+          <div class="img-col">
+            <img
+              src="https://i.a4vn.com/2018/9/16/ho-ngoc-ha-suyt-chet-khi-ngam-minh-trong-bon-khi-lanh-170-do-41e960.jpeg"
+              alt="">
+          </div>
+          <div class="content-name">
+            <div class="name">
+              ROSE-AMY
+            </div>
+            <p>WEIGHTLIFTING</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow bounceInUp" data-wow-delay="0.7s">
+          <div class="img-col">
+            <img src="https://hellobacsi.com/wp-content/uploads/2019/03/nhung-dieu-nen-lam-sau-khi-tap-yoga-avatar.jpg"
+              alt="">
+          </div>
+          <div class="content-name">
+            <div class="name">
+              ROSE-AMY
+            </div>
+            <p>WEIGHTLIFTING</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow bounceInUp" data-wow-delay="0.9s">
+          <div class="img-col">
+            <img src="https://html.rovadex.com/html-fitmax/assets/img/single-5.jpg" alt="">
+          </div>
+          <div class="content-name">
+            <div class="name">
+              ROSE-AMY
+            </div>
+            <p>WEIGHTLIFTING</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow bounceInUp" data-wow-delay="1.1s">
+          <div class="img-col">
+            <img src="https://html.rovadex.com/html-fitmax/assets/img/single-1.jpg" alt="">
+          </div>
+          <div class="content-name">
+            <div class="name">
+              ROSE-AMY
+            </div>
+            <p>WEIGHTLIFTING</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END-SECTION-4 -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- map -->
+  <div class="map_box wow bounceInUp">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61330.16152663314!2d105.78149591800916!3d21.032157607305106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1588646790176!5m2!1svi!2s"
+        width="600" height="450" frameborder="0" style="border:0;"></iframe>
+      <strong></strong> </div>
+  </div>
+  <!-- map -->
+  <!-- foodter -->
+  <footer class="main-footer wow bounceInUp" data-wow-delay="0.2s">
+    <div class="container-fluid">
+      <div class="row row-foodter">
+        <div class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12"> <a href="#">
+            <h2 class="logo_name">GYM <span class="white_text">HOME </span> </h2>
+          </a>
+          <div class="widget-about">
+            <p>ligula sed porta cursus, lectus ligula interdum tortor, vitae tempor leo eros lobortis ante.
+              Integer semper, metus in tincidunt euismod.</p>
+            <div class="social"><a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a>
+              <a class="fa fa-instagram" href="#"></a> <a class="fa fa-google-plus" href="#"></a></div>
+          </div>
+        </div>
+        <div class="footer-widget quick-links col-md-2 col-sm-6 col-xs-12 ">
+          <h4>LINKS</h4>
+          <div class="widget-link">
+            <ul>
+              <li> <a href="index.html">Home</a></li>
+              <li> <a href="about.html">About Us</a></li>
+              <li> <a href="classes.html">Coueses</a></li>
+              <li> <a href="shedule.html">Schedule</a></li>
+              <li> <a href="blogpage.html">Blog</a></li>
+              <li> <a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-widget latest-work col-md-4 col-sm-6 col-xs-12 ">
+          <h4>Instagram</h4>
+          <div class="widget-post">
+            <div class="clearfix">
+              <figure class="image"><a href="#"><img
+                    src="https://img.webthethao.vn/images/fullsize/2020/01/20/bi-quyet-an-tap-cuc-pham-cua-nu-hoang-phong-gym-trang-tracy-cho-tet-canh-ty-2020.jpg"
+                    alt=""></a></figure>
+              <figure class="image"><a href="#"><img
+                    src="https://www.elleman.vn/wp-content/uploads/2018/12/02/bai-tap-gym-elle-man-featured-image.jpg"
+                    alt=""></a></figure>
+              <figure class="image"><a href="#"><img
+                    src="https://swequity.vn/wp-content/uploads/2020/03/phong-gym-tot-o-ha-noi-1024x685.jpg" alt=""></a>
+              </figure>
+              <figure class="image"><a href="#"><img
+                    src="https://thegioidotap.vn/content/wp-content/uploads/2019/10/lich-tap-Gym-va-huong-dan-chi-tiet-ve-giao-an-tap-Gym-giam-can-tang-co-cho-nam-1.jpg"
+                    alt=""></a></figure>
+              <figure class="image"><a href="#"><img
+                    src="https://i-suckhoe.vnecdn.net/2019/01/08/37512123-1616778381766794-4555318038705995776-o-1546932036_680x0.jpg"
+                    alt=""></a></figure>
+              <figure class="image"><a href="#"><img
+                    src="https://lh3.googleusercontent.com/proxy/u7k8_qYbGNdMWuNxmTQkGtjgSU3L5-oUOT8979ex7PJT-1Ry88u-iqIJ7eK2a7Y0lU_L_m9glDK5OdnTvhvjiUa8kGksgfjOhfUCPguRze4bovRNHFo0zEwPww"
+                    alt=""></a></figure>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widget address col-md-3 col-sm-6 col-xs-12">
+          <h4>Contact us</h4>
+          <div class="widget-content">
+            <div class="address_box">
+              <p><i class="fa fa-phone"></i>0333765265</p>
+            </div>
+            <div class="address_box">
+              <p><i class="fa fa-envelope"></i>Tungnguyenvan9296@</p>
+            </div>
+            <div class="address_box1">
+              <p><i class="fa fa-map-marker"></i> 1011Santa Monica <br>
+                boulevard Los Angeles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="auto-container text-center">© 2020 <a href="#">GYMHOME.</a> With All rights reserved.</div>
+    </div>
+  </footer>
+  <!-- foodter -->
+  <button id="topBtn"><a href="#"><i class="fa fa-angle-up back-top" style="display: inline;"></i></a></button>
+
+
+
+
+
+
+
+
+ <!-- END-MODAL-VIDEO -->
+<button id="topBtn"><a href="#"><i class="fa fa-angle-up back-top" style="display: inline;"></i></a></button>
+<script type="text/javascript" src="js/jquery3.1.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/yoga.js">
+    new WOW().init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,705 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    z-index: 501;
+    opacity: 0;
+    transition: .5s;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 200;
+}
+a.logo.logo1{
+    text-decoration: none;
+    position: relative;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Baloo" !important;
+}
+a.logo span {
+    color: #37d72f;
+}
+.toggle {
+    max-width: 60px;
+    cursor: pointer;
+}
+.toggle img {
+    width: 100%;
+}
+.banner{
+    height:100vh;
+    width:100%;
+    background: url('../img/banner-img.jpg');
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+a.logo span{
+color:#111111;
+font-family: "Baloo" !important;
+}
+.banner-text h3{
+  font-family: "Baloo" !important;
+  font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color:#37d72f;
+}
+.banner-text h1{
+  font-size: 60px;
+  word-spacing: 5px;
+  color: #222;
+  font-weight: 900;
+  padding: 10px 0 16px;
+  z-index: 99;
+  text-transform: capitalize;
+  font-family: "Baloo" !important;
+
+}
+.banner-text p{
+  font-size:16px;
+  letter-spacing: 2px;
+  color:#3e3e3e;
+}
+.banner-btn a {
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 2px;
+  vertical-align: top;
+  text-align: center;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 13px 32px;
+  border-radius: 35px;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  background: #37d72f;
+}
+
+/* NAVIGATION */
+
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh;
+    justify-content: space-around;
+    position:absolute;
+    right:0;
+    top:0;
+    background: #0f1014;
+    transform: translateX(0);
+    z-index: 502;
+    transition: 0.7s;
+}
+img.icon-cart{
+    width:40px;
+}
+.nav-middle ul{
+    display: block;
+    height: initial;
+    list-style-type: none;
+    text-align: center;
+}
+.nav-middle ul li{
+    line-height: 60px;
+    padding: 0 20px;
+}
+.nav-middle ul li a, .nav-right ul li a {
+    text-decoration: none;
+    color: white;
+}
+.nav-middle ul, .nav-right ul{
+    display: block;
+    height: initial;
+    text-align: center;
+    list-style-type: none;
+}
+.nav-middle ul li, .nav-right ul li {
+    line-height: 60px;
+}
+button.btn.btn-primary{
+    background: none;
+    border:none;
+}
+.logo {
+   
+    text-align: center;
+}
+.logo span {
+    font-size: 35px;
+    font-weight: 700;
+}
+.logo-gym {
+    width: 100px;
+    color: white;
+}
+.logo-home {
+    color: #82b53f;
+    text-align: center;
+}
+.fa-times {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 25px;
+    color: white;
+    z-index: 502;
+    cursor: pointer;
+}
+
+
+
+.overlay1 {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    z-index: 501;
+    opacity: 0;
+    transition: .5s;
+  
+}
+.overlay1.menu-open {
+    width: 100%;
+    opacity: 1;
+}
+
+.active{
+    transform: translateX(100%);
+}
+/* NAVIGATION */
+
+@media(min-width:1200px){
+    .container {
+        max-width: 1350px;
+    }
+}
+i.fa.fa-comments-o,i.fa.fa-clock-o{
+    color:#37d72f;
+}
+.banner{
+    height:15vh;
+}
+.overfow-on{
+    overflow: unset;
+}
+
+
+
+
+
+
+.back-top{
+    background: #37d72f;
+}
+
+
+
+/* BEGIN-SECTION-1 */
+.sec-1{
+    padding: 65px 0 140px;
+}
+h2.title-decor{
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom:20px;
+    font-family: 'Baloo'!important;
+    font-size:45px;
+}
+h2.title-decor span{
+color:#37d72f;
+font-family: 'Baloo'!important;
+font-size:55px;
+}
+h2.title-decor{
+    position: relative;
+}
+h2.title-decor:before{
+    content:'';
+    height:4px;
+    width:45px;
+    bottom: 0;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    background: #111111;
+}
+.slogan {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 40px;
+    color: #3e3e3e;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: .25s ease-in;
+}
+.out-trainer-item{
+    display:flex;
+    justify-content: space-between;
+}
+i.fa.fa-twitter,i.fa.fa-youtube,i.fa.fa-instagram,i.fa.fa-facebook{
+    color:#37d72f;
+    font-size:20px;
+    transition: .25s ease-in;
+}
+ul.social-list{
+    display:flex;
+}
+ul.social-list li{
+    padding:10px 10px;
+}
+.out-trainer-info{
+
+    padding: 30px 30px;
+    text-align: justify;
+}
+.out-trainer-info h3 a{
+    color: #111111;
+    font-family: 'Baloo'!important;
+    font-size:40px;
+    transition: .25s ease-in;
+}
+.prof{
+    font-family: 'Baloo'!important;
+    font-size:23px; 
+    color:#37d72f;
+    transition: .25s ease-in;
+}
+.out-trainer-info p {
+    color: #3e3e3e;
+    margin-bottom: 17px;
+    transition: .25s ease-in;
+    text-align: justify;
+    font-size:18px;
+}
+.sec-1{
+    width:85%;
+    margin:auto;
+   
+}
+section.s-crossfit-banner{
+    margin-bottom: 50px;
+}
+.out-trainer-col{
+    margin-bottom:30px;
+}
+.out-trainer-item{
+    background: #efefef;
+}
+.out-trainer-col:nth-child(2n) {
+    transform: translateY(30px);
+}
+.out-trainer-item{
+    cursor: pointer;
+}
+.out-trainer-item:hover{
+    background: #37d72fd1;
+}
+.out-trainer-item:hover .prof{
+    color: white;
+}
+.out-trainer-item:hover i{
+    color:white;
+}
+/* END-SECTION-1 */
+
+
+
+/* BEGIN-SEC2 */
+.s-crossfit-banner {
+    position: relative;
+    background-color: #37d72f;
+    display: flex;
+    justify-content: space-between;
+}
+.crossfit-banner-left{
+    background-image: url('../img/img-sec2.jpg');
+    height: 350px;
+    width: 44.5%;
+    background-position: center;
+    background-size: cover;
+}
+.crossfit-banner-right{
+    width:54.55%;
+    padding: 20px 15px 10px 124px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.crossfit-banner-right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/bg-crossfit.svg');
+}
+.text-top{
+    font-size:35px;
+    font-family: 'Baloo'!important;
+}
+.crossfit-banner-right h2{
+color:white;
+font-size: 90px;
+font-family: 'Baloo'!important;
+text-transform: uppercase;
+}
+.text-bottom{
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Baloo'!important;
+    font-size:40px;
+}
+.crossfit-banner-right .text-bottom a {
+    font-weight: 700;
+    color: #111111;
+    position: relative;
+    font-family: 'Baloo'!important;
+}
+.crossfit-banner-right .text-bottom a:before{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    left: 0;
+    transition: .3s ease;
+    background-color: white;
+    height: 3px;
+    font-family: 'Baloo'!important;
+    width: 100%;
+}
+.crossfit-banner-right .text-bottom a:hover{
+color:white;
+}
+.crossfit-banner-right .text-bottom a:hover:before{
+    width: 0%;
+}
+
+
+
+
+
+
+/* BEFIN-REVIEW-GYMHOME */
+.sec3{
+  margin-bottom: 50px;
+}
+.review-gymhome{
+  padding:80px 0;
+  width:100%;
+  background-color: #efefef;
+}
+.content-review{
+width:90%;
+margin:auto;
+}
+.reivew-pics img{
+  width:80px;
+  height:80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin:20px;
+  filter: grayscale(100%);
+}
+.content-review{
+  text-align: center;
+}
+.review-p {
+  max-width: 700px;
+  margin: auto;
+}
+.content-review-p{
+  display:none;
+}
+.active-review{
+  filter: none;
+}
+.reivew-pics img{
+  cursor: pointer;
+}
+.reivew-pics img:hover{
+  filter:none;
+}
+.reivew-pics img.active-review{
+  filter:none;
+}
+.content-review-p.active-review{
+  display:block;
+  background: none;
+    }
+    .content-review h2{
+      color:#37d72f;
+      font-family: 'Baloo'!important;
+    }
+    .content-review h2 span{
+      font-family: 'Baloo'!important;
+      color:#111111;
+    }
+
+/* END-REVIEW-GYMHOME */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* foodter */
+.map_box{
+    margin-top:100px;
+}
+iframe {
+    width: 100%;
+}
+.main-footer {
+    position: relative;
+    background: #111111;
+    color: #ffffff;
+    font-size:15px;
+  }
+  .carousel-inner, .carousel, .item, .container, .fill {
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+  }
+  .main-footer .footer-widget-area {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .main-footer .footer-widget-area .footer-widget {
+    padding-bottom: 30px;
+    padding-left: 0px;
+  }
+  a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+  }
+  .main-footer .logo_name {
+    margin: 0;
+    margin-bottom: 25px;
+   
+  }
+  .header-lower .logo .logo_name, .main-footer .logo_name {
+    margin: 8px auto;
+    color: #82b53f;
+    font-weight: 800;
+    font-family: "Baloo" !important;
+  }
+  .header-lower .logo .logo_name .white_text, .main-footer .logo_name .white_text {
+    color: #ffffff;
+    font-family: "Baloo" !important;
+  }
+  .main-footer .footer-widget-area .footer-widget {
+    padding-bottom: 30px;
+    padding-left: 0px;
+  }
+  .footer-widget.quick-links.col-md-2.col-sm-6.col-xs-12{
+      padding-left: 30px !important;
+  
+  }
+  
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .widget-link ul, li a{
+    text-decoration: none;
+    color:white;
+  }
+  
+  .row-foodter{
+    width:80%;
+    margin:auto;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  
+  .clearfix .image a img{
+    width:100%;
+  }
+  
+  .footer-bottom{
+    padding: 15px;
+    background: rgba(55, 215, 47, 0.83);
+  }
+  .widget-link ul li{
+    padding: 4px;
+    font-size:15px;
+  }
+  
+  .widget-post .image {
+    position: relative;
+    float: left;
+    width: 23.333%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    height:100px;
+    object-fit: cover;
+  }
+   i.fa.fa-phone,i.fa.fa-envelope,i.fa.fa-map-marker{
+    font-size: 20px;
+    color: #82b53f;
+    padding-right: 7px;
+    padding-left: 7px;
+  } 
+  .address_box{
+    margin-bottom: 20px;
+  }
+  .col-xs-12 h4{
+    font-family: "Baloo" !important;
+    margin-bottom: 20px;
+  }
+  .textBox a{
+    color:black;
+  }
+  .auto-container.text-center{
+    color:#111111;
+    font-weight: 600;
+  }
+  @media(max-width:1295px){
+    .widget-post .image{
+      width: 30.333%;
+      height:75px;
+      margin-bottom: 0;
+    }
+  }
+  @media(max-width:990px) and (min-width:600px){
+  .col-sm-6 {
+      width: 50%;
+  }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 50%;
+    max-width: 49.666667%;
+  }
+  .footer-widget.quick-links.col-md-2.col-sm-6.col-xs-12 {
+    padding-left: 74px !important;
+  }
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 50%;
+    max-width: 50.333333%;
+  }
+  .footer-widget.address.col-md-3.col-sm-6.col-xs-12{
+    margin-top:20px;
+    padding-left: 74px !important;
+  }
+  }
+  @media(max-width:600px){
+    .col-md-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .col-md-2 {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 100%;
+      max-width: 99.666667%;
+    }
+    .col-md-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-widget{
+      margin-bottom: 40px;
+    }
+    .footer-widget.quick-links.col-md-2.col-sm-6.col-xs-12 {
+      padding-left: 10px !important;
+  }
+  .background-img3{
+      display:none;
+  }
+  }
+  @media(max-width:450px){
+    .widget-post .image{
+      width: 33.333%;
+    }
+    .row-foodter {
+      width: 90%;
+    }
+  }
+  /* end-foodter */
+  header{
+    padding:20px 100px;
+  }
+  .banner{
+    height:10vh;
+    background-image: none;
+    background: #37d72f;
+  }
+  @media(max-width:600px){
+    header{
+        padding:20px 20px;
+      }
+      a.logo.logo1,a.logo span{
+          font-size:27px;
+      }
+  }
+  .back-top {
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #37d72fd4;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 1000;
+    display: none;
+}

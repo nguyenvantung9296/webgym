@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../css/shoppingcart.css">
+</head>
+
+<body>
+    <div class="overlay1"></div>
+    <header class="wow bounceInDown">
+        <a href="../index3.html" class="logo logo1">Gym <span>Home</span></a>
+        <div class="toggle"><img src="../img/toggle.png" alt=""></div>
+
+    </header>
+    <div class="banner">
+        <!-- navigation -->
+        <nav class="active">
+            <i class="fas fa-times" aria-hidden="true"></i>
+            <div class="logo">
+                <!-- <img src="img/logo.png" alt=""> -->
+                <span class="logo-gym">GYM</span> <span class="logo-home">HOME</span>
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="../index3.html">Trang Chủ</a></li>
+                    <li><a href="../GymHome.html">Gym Home</a></li>
+                    <li><a href="../Lostdate.html">Lịch Tập</a></li>
+                    <li><a href="../Boxing.html">Boxing</a></li>
+                    <li><a href="../HlvGym.html">HLV Gym</a></li>
+                    <li><a href="../Promotion.html">Khuyến Mãi</a></li>
+                    <li><a href="">Tuyển Dụng</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+
+
+                        <i class="fas fa-user" aria-hidden="true"></i>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Đăng Nhập
+                        </button>
+
+
+
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-cart" aria-hidden="true"></i>
+                            <img class="icon-cart" src="../img/giohang.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navigation -->
+        <div class="slider-text">
+
+        </div>
+        <div class="background-banner"></div>
+    </div>
+
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <div class="outer-cart">
+    
+                </div>
+                <div class="header">
+                    <h4>Giỏ hàng thanh toán :
+                        <span id="tot" class="totale">
+                          
+                        </span> $</h4>
+                </div>
+            </div>
+        </div> -->
+        <div class="row  row01">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h1 class="text-center m-t-25 m-b-25">GIỎ HÀNG CỦA BẠN</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-2 col-md-2">Anh san pham</div>
+            <div class="col-xs-12 col-sm-12 col-md-4">Tên Sản Phẩm</div>
+            <div class="col-xs-12 col-sm-12 col-md-2">Số lượng</div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 col-sm-12">Giá</div>
+                    <div class="col-md-6 col-xs-12 col-sm-12">Thành tiền</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outer-cart">
+
+    </div>
+    <div class="modal-footer">
+        <div class="row row-03">
+            <div class="col-sm-8 col-xs-12 pull-left note_ite m-b-xs-10">
+                <div class="note-new-year">
+                    <p>
+                        <b>Đối với khu vực tỉnh: Những đơn hàng phát sinh trước 14g ngày 16/01/2020 sẽ được giao hàng
+                            trước
+                            Tết, các đơn hàng phát sinh sau 14g sẽ được xử lý vào ngày 30/1/2020</b>
+                    </p>
+                    <p>
+                        - Khu vực: Nội thành HN, TP Đà Nẵng, Tp Hải Phòng, TP Cần Thơ, TP Thủ Dầu Một, Dĩ An, Thuận An
+                        (Bình
+                        Dương), TP Biên Hòa, TP Vũng Tàu: Những đơn hàng phát sinh trước 14g ngày 18/01/2020 sẽ được
+                        giao
+                        hàng trước Tết, các đơn hàng phát sinh sau 14g sẽ được xử lý vào ngày 30/01/2020
+                    </p>
+                    <p>
+                        - Nội thành HCM: Những đơn hàng phát sinh trước 14g ngày 20/01/2020 sẽ được giao hàng trước Tết,
+                        các
+                        đơn hàng phát sinh sau 14g sẽ được xử lý vào ngày 30/1/2020
+                    </p>
+                </div>
+                <h3 class="continue_shopping m-t-0 m-b-15">
+                    <a class="comeback" href="/collections/all"><i class="fa fa-reply"></i> Tiếp tục mua hàng</a>
+                </h3>
+                <div class="note_cart text-left">
+                    <div class="tuvan m-t-20 m-b-20">GỌI NGAY <strong>0966 158 666</strong> để nhận tư vấn khi phát sinh
+                        khó
+                        khăn trong lúc mua hàng !</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 pull-right">
+                <div class="total-price-modal m-b-30 clearfix"><strong class="item_total_title">Tạm Tính: </strong>
+                    <span id="tot" class="totale">
+
+                    </span> $</h4>
+                </div>
+                <div class="text-right">
+                    <div class="dis_inline_block update_cart_wrap">
+                        <button class="hidden" type="button" name="update" id="update-cart"
+                            onclick="buyXgetY.UpdateCartFromCart();">Cập nhật giỏ hàng</button>
+                    </div>
+                    <div class="dis_inline_block checkout_wrap">
+                        <button type="button" class="getCart" class="getProduct" data-product_key="" onclick="AddToShoppingCart(this)"
+                        href="OrderCart.html">Thanh toán ngay
+                            !</button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="m-t-15 m-b-15 feedback"><span>Phản Hồi:</span> 0966 158 666 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="footer-hashtag">
+        <div class="title-hashtag text-center">
+            <h2 class="title">hashtag <a class="gymhome"href="">GymHome</a> ĐỂ CÓ CƠ HỘI XUẤT HIỆN TRÊN WEBSITE CỦA CHÚNG TÔI</h2>
+        </div>
+        <div class="image-hashtag clearfix">
+            <ul class="list-img-hashtag">
+
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhu5fKRVyig5W4pn7ANtOqCWaCUT5IicFcFaKSJT5LsFfCJNnX&usqp=CAU">
+                    </a>
+                </li>
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6qp_9bMXDat03aTHYB9inHSRfRL-Ee--wW_8hhSpFsPGH2Mes&usqp=CAU" alt="hashtag bitis 2">
+                    </a>
+                </li>
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://1.bp.blogspot.com/-gW5ODbNP4WE/WA7AfNTq-YI/AAAAAAAAAAs/fPevzJ9WIPgf-Iik8re-8NeehNbPLsa2QCEw/s1600/14657295_1107628242685401_5195896473183320089_n.jpg" alt="hashtag bitis 3">
+                    </a>
+                </li>
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://s1.haivn.com/data/600_a872e40b-e444-4c28-af65-4befd0c8aedc.jpg" alt="hashtag bitis 4">
+                    </a>
+                </li>
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqQC1NzL0A-n9gwmdszfOed6S9quSxPrXoCYS_rwsNlSbPV78F&usqp=CAU" alt="hashtag bitis 5">
+                    </a>
+                </li>
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://vnn-imgs-f.vgcloud.vn/2019/07/23/07/ngam-ve-sexy-kho-cuong-cua-nu-huan-luyen-vien-the-hinh-9x-4.jpg" alt="hashtag bitis 6">
+                    </a>
+                </li>
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://vnn-imgs-f.vgcloud.vn/2019/07/23/07/ngam-ve-sexy-kho-cuong-cua-nu-huan-luyen-vien-the-hinh-9x-3.jpg" alt="hashtag bitis 7">
+                    </a>
+                </li>
+                <li class="item-img-hashtag">
+                    <a href="">
+                        <img src="https://kenh14cdn.com/2018/11/17/4037683920107368456494176632376433643618304n-1-15414282422402043236083-1542450861369578341552.jpg" alt="hashtag bitis 8">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+    <a href="#"><i class="fa fa-angle-up back-top" style="display: none;"></i></a>
+    <!--FOODTER-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- foodter -->
+    <footer class="main-footer">
+        <div class="container-fluid">
+            <div class="row row-foodter">
+                <div class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12"> <a href="#">
+                        <h2 class="logo_name">GYM <span class="white_text">HOME </span> </h2>
+                    </a>
+                    <div class="widget-about">
+                        <p>ligula sed porta cursus, lectus ligula interdum tortor, vitae tempor leo eros lobortis ante.
+                            Integer semper, metus in tincidunt euismod.</p>
+                        <div class="social"><a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter"
+                                href="#"></a>
+                            <a class="fa fa-instagram" href="#"></a> <a class="fa fa-google-plus" href="#"></a></div>
+                    </div>
+                </div>
+                <div class="footer-widget quick-links col-md-2 col-sm-6 col-xs-12 ">
+                    <h4>LINKS</h4>
+                    <div class="widget-link">
+                        <ul>
+                            <li> <a href="../index.html">Home</a></li>
+                            <li> <a href="../about.html">About Us</a></li>
+                            <li> <a href="../classes.html">Coueses</a></li>
+                            <li> <a href="../shedule.html">Schedule</a></li>
+                            <li> <a href="../blogpage.html">Blog</a></li>
+                            <li> <a href="../contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-widget latest-work col-md-4 col-sm-6 col-xs-12 ">
+                    <h4>Instagram</h4>
+                    <div class="widget-post">
+                        <div class="clearfix">
+                            <figure class="image"><a href="#"><img
+                                        src="https://img.webthethao.vn/images/fullsize/2020/01/20/bi-quyet-an-tap-cuc-pham-cua-nu-hoang-phong-gym-trang-tracy-cho-tet-canh-ty-2020.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://www.elleman.vn/wp-content/uploads/2018/12/02/bai-tap-gym-elle-man-featured-image.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://swequity.vn/wp-content/uploads/2020/03/phong-gym-tot-o-ha-noi-1024x685.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://thegioidotap.vn/content/wp-content/uploads/2019/10/lich-tap-Gym-va-huong-dan-chi-tiet-ve-giao-an-tap-Gym-giam-can-tang-co-cho-nam-1.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://i-suckhoe.vnecdn.net/2019/01/08/37512123-1616778381766794-4555318038705995776-o-1546932036_680x0.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://lh3.googleusercontent.com/proxy/u7k8_qYbGNdMWuNxmTQkGtjgSU3L5-oUOT8979ex7PJT-1Ry88u-iqIJ7eK2a7Y0lU_L_m9glDK5OdnTvhvjiUa8kGksgfjOhfUCPguRze4bovRNHFo0zEwPww"
+                                        alt=""></a></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widget address col-md-3 col-sm-6 col-xs-12">
+                    <h4>Contact us</h4>
+                    <div class="widget-content">
+                        <div class="address_box">
+                            <p><i class="fa fa-phone"></i>0333765265</p>
+                        </div>
+                        <div class="address_box">
+                            <p><i class="fa fa-envelope"></i>Tungnguyenvan9296@</p>
+                        </div>
+                        <div class="address_box1">
+                            <p><i class="fa fa-map-marker"></i> 1011Santa Monica <br>
+                                boulevard Los Angeles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="auto-container text-center">© 2020 <a href="#">GYMHOME.</a> With All rights reserved.</div>
+        </div>
+    </footer>
+    <!-- foodter -->
+    <button id="topBtn"><a href="#"><i class="fa fa-angle-up back-top" style="display: inline;"></i></a></button>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../js/jquery3.1.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="shoppingcart.js">
+    </script>
+</body>
+
+</html>

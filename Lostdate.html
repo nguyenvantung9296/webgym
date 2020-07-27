@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/date.css">
+    <link rel="stylesheet" href="./Plateia Bold.ttf">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        .display-block{
+    display:block;
+}
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header class="wow bounceInDown">
+        <a href="index3.html" class="logo logo1">Gym <span>Home</span></a>
+        <div class="toggle"><img src="img/toggle.png" alt=""></div>
+
+    </header>
+    <div class="banner">
+        <!-- navigation -->
+        <nav class="active">
+            <i class="fas fa-times" aria-hidden="true"></i>
+            <div class="logo">
+                <!-- <img src="img/logo.png" alt=""> -->
+                <span class="logo-gym">GYM</span> <span class="logo-home">HOME</span>
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="index3.html">Trang Chủ</a></li>
+                    <li><a href="GymHome.html">Gym Home</a></li>
+                    <li><a href="yoga.html">YoGa</a></li>
+                    <li><a href="Boxing.html">Boxing</a></li>
+                    <li><a href="HlvGym.html">HLV Gym</a></li>
+                    <li><a href="Promotion.html">Khuyến Mãi</a></li>
+                    <li><a href="Contact.html">Liên Hệ</a></li>
+                    <li><a href="">Tuyển Dụng</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+
+
+                        <i class="fas fa-user" aria-hidden="true"></i>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Đăng Nhập
+                        </button>
+
+
+
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-cart" aria-hidden="true"></i>
+                            <img class="icon-cart" src="img/giohang.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navigation -->
+        <div class="slider-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-left wow fadeInLeftBig"
+                            style="visibility: visible;animation-name: fadeInLeftBig;"> TRANSFORM</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <h2 class="text-right outline-green wow fadeInRightBig"
+                            style="visibility: visible; animation-name: fadeInRightBig;">BUILDING A COMMUNITY OF FITNESS
+                            ATHLETIC</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-banner"></div>
+    </div>
+    <p class="breadcrumb1 wow bounceInDown"><span> Home / Shedule </span></p>
+
+    <div class="container">
+
+            <div class="row row-abum">
+                <div class="menu-abum wow flipInX">
+                    <ul class="menu menu-date filter ">
+                        <li class=" li-menu li-thu2 " data-filter=".thu2">Thứ 2</li>
+                        <li class=" li-menu li-thu3" data-filter=".thu3">Thứ 3</li>
+                        <li class="li-menu li-thu4" data-filter=".thu4">Thứ 4</li>
+                        <li class="li-menu" data-filter=".thu5">Thứ 5</li>
+                        <li class="li-menu" data-filter=".thu6">Thứ 6</li>
+                        <li class="li-menu" data-filter=".thu7">Thứ 7</li>
+                        <li class="li-menu" data-filter=".chunhat">Chủ Nhật</li>
+                    </ul>
+                </div>
+                <div class="dropdown wow bounceInUp">
+                    <a class="btn btn-secondary dropdown-toggle btn-menu" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Phòng Tập
+                    </a>
+                
+                    <div class="dropdown-menu menu menu menu-date filter"aria-labelledby="dropdownMenuLink">
+                        <li class=" li-menu li-thu2 dropdown-item " data-filter=".thu2">Thứ 2</li>
+                        <li class=" li-menu li-thu3 dropdown-item" data-filter=".thu3">Thứ 3</li>
+                        <li class="li-menu li-thu4 dropdown-item" data-filter=".thu4">Thứ 4</li>
+                        <li class="li-menu dropdown-item" data-filter=".thu5">Thứ 5</li>
+                        <li class="li-menu dropdown-item" data-filter=".thu6">Thứ 6</li>
+                        <li class="li-menu dropdown-item" data-filter=".thu7">Thứ 7</li>
+                        <li class="li-menu dropdown-item" data-filter=".chunhat">Chủ Nhật</li>
+                    </div>
+                </div>
+            </div>
+            <div class="row isotope-grid">
+
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/size.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> Weight Loose </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/run.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> CARDIO</h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+               
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="0.4s">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/yoga.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> YOGA </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="0.6s">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/body.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> FITNESS </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="0.8s">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/box.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4>KARATE </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="1s">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/boxing-gloves.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4>BOXING /h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="1.2s">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/rope.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4>AEROBICS & SKIPPING </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu2">
+                    <div class="sec1 wow bounceInUp" data-wow-delay="1.5">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/biceps.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> BODY BUILDING</h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+
+
+                <!-- THỨ 3 -->
+  
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1 opacity">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/size.png" alt="">
+                            </div>
+                            <span class="time"> 08AM-10AM </span>
+                            <h4> Weight Loose </h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/run.png" alt="">
+                            </div>
+                            <span class="time"> 08AM-10AM </span>
+                            <h4> CARDIO</h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/body.png" alt="">
+                            </div>
+                            <span class="time"> 01PM-02PM </span>
+                            <h4> FITNESS </h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1 opacity">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/yoga.png" alt="">
+                            </div>
+                            <span class="time"> 08AM-10AM </span>
+                            <h4> YOGA </h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/box.png" alt="">
+                            </div>
+                            <span class="time"> 04PM-6PM </span>
+                            <h4>KARATE </h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/boxing-gloves.png" alt="">
+                            </div>
+                            <span class="time"> 06PM-7PM </span>
+                            <h4>BOXING /h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1 opacity">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/rope.png" alt="">
+                            </div>
+                            <span class="time"> 08AM-10AM </span>
+                            <h4>AEROBICS & SKIPPING </h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                    <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu3">
+                        <div class="sec1">
+                            <div class="img-menu">
+                                <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/biceps.png" alt="">
+                            </div>
+                            <span class="time"> 08P M-09PM </span>
+                            <h4> BODY BUILDING</h4>
+                            <p> Rachel Adam </p>
+                        </div>
+                    </div>
+                <!-- <END-THỨ 3 -->
+
+                <!-- START-THU4 -->
+
+
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1 opacity">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/size.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> Weight Loose </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1 opacity">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/run.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> CARDIO</h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+               
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/yoga.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> YOGA </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/body.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> FITNESS </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1 opacity">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/box.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4>KARATE </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/boxing-gloves.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4>BOXING /h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1 opacity">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/rope.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4>AEROBICS & SKIPPING </h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+                
+                <div class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out thu4">
+                    <div class="sec1 opacity">
+                        <div class="img-menu">
+                            <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/biceps.png" alt="">
+                        </div>
+                        <span class="time"> 08AM-10AM </span>
+                        <h4> BODY BUILDING</h4>
+                        <p> Rachel Adam </p>
+                    </div>
+                </div>
+
+
+                <!-- END-THU4 -->
+
+        </div>
+
+    </div>
+    <!-- VIDEO -->
+    <section class="video_sec">
+        <div class="container-fluid">
+          <div class="row row-video"> <a class="video-link" href="" data-width="550" data-height="350" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> <img src="http://netizensstore.com/gymfit_theme/html/html/onepage_3/assets/images/play.png" alt=""> </a>
+            <h2 class="wow bounceInUp">Explore Fitness Complex </h2>
+            <h2 class="green_text wow bounceInUp" data-wow-delay="0.5s"><a class="video-link" href="" data-width="550" data-height="350"> Watch now</a></h2>
+          </div>
+        </div>
+      </section>
+      
+    <!-- VIDEO -->
+    <!-- Modal -->
+
+    <!-- BLOG -->
+    <section class="blog-sec1" id="blog">
+        <div class="contaier">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">LATEST BLOG POSTS</h2>
+                    <p class="p-title">Proin ullamcorper ea asperiores natoque vestibulum cubilia! Officia elementum? Quasi impedit ea hendrerit id. Feugiat inceptos etiam</p>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                        
+                        
+                        
+                        
+
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1012px, 0px, 0px); transition: all 0s ease 0s; width: 3375px;"><div class="owl-item cloned" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp">
+                                <img src="https://www.thethaothientruong.vn/uploaded/medias/201214/bo-sung-protein-khi-tap-gym.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Chất dinh dưỡng cần thiết cho Gymmer</h5>
+                                  <p class="card-text">9/21/2019 10:20:13 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item cloned" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp" data-wow-delay="0.2s">
+                                <img src="https://as1.ftcdn.net/jpg/02/17/41/88/500_F_217418804_jO6gKS5IpfI6zbV98XocUY8vVcOgPCLy.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Những bài tập mang lại hiệu quả cao cho cơ vai</h5>
+                                  <p class="card-text">
+                                    3/20/2020 10:20:23 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item cloned" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp" data-wow-delay="0.4s">
+                                <img src="https://media.thethao247.vn/upload/thanhtung/2019/04/24/thuc-pham-chuc-nang-tap-gym.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">5 loại thực phẩm chức năng người tập gym cần hiểu rõ</h5>
+                                  <p class="card-text"> 3/21/2020 10:20:13 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item active" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp" data-wow-delay="0.6s">
+                                <img src="https://images.cfyc.com.vn/phn_image/Cali%20p2/che%CC%82%CC%81%20%C4%91o%CC%A3%CC%82%20dinh%20du%CC%9Bo%CC%9B%CC%83ng%20cho%20ngu%CC%9Bo%CC%9B%CC%80i%20ta%CC%A3%CC%82p%20gym%204.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bạn cần động lực thay đổi bản thân !</h5>
+                                  <p class="card-text">03/21/2019 10:20:13 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item active" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp" data-wow-delay="0.8s">
+                                <img src="https://www.thethaothientruong.vn/uploaded/medias/201214/bo-sung-protein-khi-tap-gym.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Chất dinh dưỡng cần thiết cho Gymmer</h5>
+                                  <p class="card-text">9/21/2019 10:20:13 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item active" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp" data-wow-delay="1s">
+                                <img src="https://as1.ftcdn.net/jpg/02/17/41/88/500_F_217418804_jO6gKS5IpfI6zbV98XocUY8vVcOgPCLy.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Những bài tập mang lại hiệu quả cao cho cơ vai</h5>
+                                  <p class="card-text">
+                                    3/20/2020 10:20:23 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp">
+                                <img src="https://media.thethao247.vn/upload/thanhtung/2019/04/24/thuc-pham-chuc-nang-tap-gym.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">5 loại thực phẩm chức năng người tập gym cần hiểu rõ</h5>
+                                  <p class="card-text"> 3/21/2020 10:20:13 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item cloned" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card wow bounceInUp">
+                                <img src="https://images.cfyc.com.vn/phn_image/Cali%20p2/che%CC%82%CC%81%20%C4%91o%CC%A3%CC%82%20dinh%20du%CC%9Bo%CC%9B%CC%83ng%20cho%20ngu%CC%9Bo%CC%9B%CC%80i%20ta%CC%A3%CC%82p%20gym%204.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bạn cần động lực thay đổi bản thân !</h5>
+                                  <p class="card-text">03/21/2019 10:20:13 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item cloned" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card">
+                                <img src="https://www.thethaothientruong.vn/uploaded/medias/201214/bo-sung-protein-khi-tap-gym.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Chất dinh dưỡng cần thiết cho Gymmer</h5>
+                                  <p class="card-text">9/21/2019 10:20:13 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div><div class="owl-item cloned" style="width: 327.497px; margin-right: 10px;"><div class="item">
+                            <div class="card">
+                                <img src="https://as1.ftcdn.net/jpg/02/17/41/88/500_F_217418804_jO6gKS5IpfI6zbV98XocUY8vVcOgPCLy.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Những bài tập mang lại hiệu quả cao cho cơ vai</h5>
+                                  <p class="card-text">
+                                    3/20/2020 10:20:23 PM</p>
+                                  <a href="#" class="btn btn-primary button-row3">Xem thêm</a>
+                                </div>
+                              </div>
+                        </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG-END -->
+    <!-- map -->
+<div class="map_box wow bounceInUp ">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61330.16152663314!2d105.78149591800916!3d21.032157607305106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1588646790176!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;"></iframe>
+      <strong></strong> </div>
+  </div>
+  <!-- map -->
+<!-- foodter -->
+<footer class="main-footer wow bounceInUp">
+    <div class="container-fluid">
+        <div class="row row-foodter">
+            <div class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12"> <a href="#">
+                    <h2 class="logo_name">GYM <span class="white_text">HOME </span> </h2>
+                </a>
+                <div class="widget-about">
+                    <p>ligula sed porta cursus, lectus ligula interdum tortor, vitae tempor leo eros lobortis ante.
+                        Integer semper, metus in tincidunt euismod.</p>
+                    <div class="social"><a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a>
+                        <a class="fa fa-instagram" href="#"></a> <a class="fa fa-google-plus" href="#"></a></div>
+                </div>
+            </div>
+            <div class="footer-widget quick-links col-md-2 col-sm-6 col-xs-12 ">
+                <h4>LINKS</h4>
+                <div class="widget-link">
+                  <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li> <a href="classes.html">Coueses</a></li>
+                    <li> <a href="shedule.html">Schedule</a></li>
+                    <li> <a href="blogpage.html">Blog</a></li>
+                    <li> <a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-widget latest-work col-md-4 col-sm-6 col-xs-12 ">
+                <h4>Instagram</h4>
+                <div class="widget-post">
+                  <div class="clearfix">
+                    <figure class="image"><a href="#"><img src="https://img.webthethao.vn/images/fullsize/2020/01/20/bi-quyet-an-tap-cuc-pham-cua-nu-hoang-phong-gym-trang-tracy-cho-tet-canh-ty-2020.jpg" alt=""></a></figure>
+                    <figure class="image"><a href="#"><img src="https://www.elleman.vn/wp-content/uploads/2018/12/02/bai-tap-gym-elle-man-featured-image.jpg" alt=""></a></figure>
+                    <figure class="image"><a href="#"><img src="https://swequity.vn/wp-content/uploads/2020/03/phong-gym-tot-o-ha-noi-1024x685.jpg" alt=""></a></figure>
+                    <figure class="image"><a href="#"><img src="https://thegioidotap.vn/content/wp-content/uploads/2019/10/lich-tap-Gym-va-huong-dan-chi-tiet-ve-giao-an-tap-Gym-giam-can-tang-co-cho-nam-1.jpg" alt=""></a></figure>
+                    <figure class="image"><a href="#"><img src="https://i-suckhoe.vnecdn.net/2019/01/08/37512123-1616778381766794-4555318038705995776-o-1546932036_680x0.jpg" alt=""></a></figure>
+                    <figure class="image"><a href="#"><img src="https://lh3.googleusercontent.com/proxy/u7k8_qYbGNdMWuNxmTQkGtjgSU3L5-oUOT8979ex7PJT-1Ry88u-iqIJ7eK2a7Y0lU_L_m9glDK5OdnTvhvjiUa8kGksgfjOhfUCPguRze4bovRNHFo0zEwPww" alt=""></a></figure>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-widget address col-md-3 col-sm-6 col-xs-12">
+                <h4>Contact us</h4>
+                <div class="widget-content">
+                  <div class="address_box"> 
+                    <p><i class="fa fa-phone"></i>0333765265</p>
+                  </div>
+                  <div class="address_box"> 
+                    <p><i class="fa fa-envelope"></i>Tungnguyenvan9296@</p>
+                  </div>
+                  <div class="address_box1">
+                    <p><i class="fa fa-map-marker"></i> 1011Santa Monica <br>
+                                 boulevard Los Angeles</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="auto-container text-center">© 2020 <a href="#">GYMHOME.</a> With All rights reserved.</div>
+    </div>
+</footer>
+<!-- foodter -->
+<button id="topBtn"><a href="#"><i class="fa fa-angle-up back-top" style="display: inline;"></i></a></button>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- MODAL-VIDEO -->
+                <div class="player js--show-video">
+                    <div class="player__video">
+                        <div class="video-filler"></div><iframe class="video-iframe"
+                            src="https://www.youtube.com/embed/AulGwjIv3m8" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                    <div></div>
+                </div>
+                <!-- MODAL-VIDEO -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="js/jquery3.1.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/lostdate.js">
+</script>
+</body>
+
+</html>

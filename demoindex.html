@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index3.css">
+    <style>
+        .img-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            opacity: 0.15;
+        }
+
+        div#carouselId {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .carousel-item1::before {
+            content: '';
+            width: 450px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #37d72f;
+            transform-origin: top;
+            transform: skewX(-25deg);
+            z-index: 1;
+            transition: 1.2s;
+        }
+
+        .carousel-item2::before {
+            content: '';
+            width: 450px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(to right, #37d72f, #ffeb3bd6);
+            transform-origin: top;
+            transform: skewX(-25deg);
+            z-index: 1;
+            transition: 1.2s;
+        }
+
+        .carousel-item3::before {
+            content: '';
+            width: 450px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(to right,#b7f664, #37d72f);
+            transform-origin: top;
+            transform: skewX(-25deg);
+            z-index: 1;
+            transition: 1.2s;
+        }
+
+        .imgBox.wow.slideInRight {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            z-index: 3;
+        }
+
+        .imgBox.wow.slideInRight img {
+            z-index: 1111;
+            position: absolute;
+            bottom: 0;
+            height: 90%;
+            right: 0;
+        }
+
+        .content-item1 {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 100px;
+            align-items: center;
+        }
+
+        .textBox.wow.slideInLeft {
+            position: relative;
+            max-width: 500px;
+            text-align: justify;
+            margin-top:70px;
+            z-index:101;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        img.img-banner {
+            opacity: 0.15;
+        }
+
+        .img-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            opacity: 1;
+        }
+
+        img.img-banner3 {
+            opacity: 1;
+        }
+
+        .img-banner-c3 {
+            opacity: 0.15;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+      @media(min-width:1200px){
+        ol.carousel-indicators.carousel-indicators1{
+            justify-content: left;
+            margin-left: 22%;
+            bottom: -10px;
+        }
+        ol.carousel-indicators.carousel-indicators1 li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #37d72f;
+    margin: 0 7px;
+}
+      }
+      a.carousel-control-prev.carousel-left{
+          left:-4%;
+      }
+      a.carousel-control-next.carousel-right{
+          right:-4%;
+      }
+      @media(max-width:1000px){
+          .content-item1{
+              display:flex;
+              flex-direction: column;
+                padding: 150px 50px 0;
+    overflow: hidden;
+          }
+          .textBox.wow.slideInLeft{
+              margin-top:0;
+          }
+          .carousel-item1::before{
+            width: 300px;
+    transform: skewX(-25deg) translateX(50%);
+          }
+          .imgBox.wow.slideInRight img{
+              right:unset;
+          }
+          a.carousel-control-prev.carousel-left{
+          left:-2%;
+      }
+      a.carousel-control-next.carousel-right{
+          right:-2%;
+      }
+      }
+    </style>
+</head>
+
+
+<body>
+    <div class="overlay"></div>
+    <header class="wow bounceInDown">
+        <a href="" class="logo logo1">Gym <span>Home</span></a>
+        <div class="toggle"><img src="img/toggle.png" alt=""></div>
+
+    </header>
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators carousel-indicators1">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!--NAVIGATION-->
+            <nav class="active-menu">
+                <i class="fas fa-times" aria-hidden="true"></i>
+                <div class="logo">
+                    <!-- <img src="img/logo.png" alt=""> -->
+                    <span class="logo-gym">GYM</span> <span class="logo-home">HOME</span>
+                </div>
+                <div class="nav-middle">
+                    <ul>
+                        <li><a href="GymHome.html">Gym Home</a></li>
+                        <li><a href="yoga.html">YoGa</a></li>
+                        <li><a href="Boxing.html">Boxing</a></li>
+                        <li><a href="HlvGym.html">HLV Gym</a></li>
+                        <li><a href="Lostdate.html">Lịch Tập</a></li>
+                        <li><a href="Promotion.html">Khuyến Mãi</a></li>
+                        <li><a href="Contact.html">Liên Hệ</a></li>
+                        <li><a href="">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right wow bounceInUp">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+
+
+                            <i class="fas fa-user" aria-hidden="true"></i>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Đăng Nhập
+                            </button>
+
+
+
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-cart" aria-hidden="true"></i>
+                                <img class="icon-cart" src="img/giohang.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--NAVIGATION-->
+            <div class="carousel-item active carousel-item1">
+                <!--NAVIGATION-->
+                <video src="img/gym.mp4" autoplay loop muted type="mp4"></video><!-- muted -->
+                <!-- type="mp4" -->
+                <div class="content-item1">
+                    <div class="textBox wow slideInLeft">
+                        <h2 class="wow slideInLeft" data-wow-delay="0.2s">Khuyến Mãi tháng 4</h2>
+                        <p class="wow slideInLeft" data-wow-delay="0.5s">Error phasellus commodo doloribus placerat consectetuer nec fuga, cubilia, reprehenderit
+                            velit.
+                            Excepturi? Voluptatum mus rhoncus aspernatur aliqua! Platea phasellus porttitor
+                            necessitatibus ut,
+                            labore lectus, magna sapien metus! Vestibulum, sed. E</p>
+                        <a class="wow slideInLeft" data-wow-delay="0.8s" href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Đăng Ký</a>
+                    </div>
+                    <div class="imgBox wow slideInRight">
+                        <img src="img/man.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item1 carousel-item2">
+                <img class="img-banner" src="img/slide-1.jpg " alt="Second slide">
+                <div class="content-item1">
+                    <div class="textBox wow slideInLeft">
+                        <h2 class="wow slideInLeft" data-wow-delay="0.2s">Khuyến Mãi tháng 4</h2>
+                        <p class="wow slideInLeft" data-wow-delay="0.5s">Error phasellus commodo doloribus placerat consectetuer nec fuga, cubilia, reprehenderit
+                            velit.
+                            Excepturi? Voluptatum mus rhoncus aspernatur aliqua! Platea phasellus porttitor
+                            necessitatibus ut,
+                            labore lectus, magna sapien metus! Vestibulum, sed. E</p>
+                        <a class="wow slideInLeft" data-wow-delay="0.8s" href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Đăng Ký</a>
+                    </div>
+                    <div class="imgBox wow slideInRight">
+                        <img class="img-banner3" src="img/banner3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item3">
+                <img class="img-banner-c3" src="img/modal-video.jpg" alt="Third slide">
+                <div class="content-item1">
+                    <div class="textBox wow slideInLeft">
+                        <h2 class="wow slideInLeft" data-wow-delay="0.2s">Khuyến Mãi tháng 4</h2>
+                        <p class="wow slideInLeft" data-wow-delay="0.5s">Error phasellus commodo doloribus placerat consectetuer nec fuga, cubilia, reprehenderit
+                            velit.
+                            Excepturi? Voluptatum mus rhoncus aspernatur aliqua! Platea phasellus porttitor
+                            necessitatibus ut,
+                            labore lectus, magna sapien metus! Vestibulum, sed. E</p>
+                        <a class="wow slideInLeft" data-wow-delay="0.8s" href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Đăng Ký</a>
+                    </div>
+                    <div class="imgBox wow slideInRight">
+                        <img class="img-banner3" src="img/banner4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev carousel-left" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next carousel-right" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">SIGN UP NOW</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-content-p">
+                        <P>To get your Full Membership Experience.
+                            Choose your preferred trial membership below.</P>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/vi/lop-hoc-yoga.html" method="post" id="cassiopeia-regiter-join-today-form"
+                            accept-charset="UTF-8">
+                            <div>
+                                <div class="form-group">
+                                    <div class="input-group"><span class="input-group-addon"><i class="fas fa-user"
+                                                aria-hidden="true"></i></span><input placeholder="Full Name"
+                                            class="form-control form-text required" type="text" id="edit-fullname"
+                                            name="fullname" value="" size="60" maxlength="128"></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-phone"
+                                                aria-hidden="true"></i></span><input placeholder="Phone number"
+                                            class="form-control form-text required" type="text" id="edit-phonenumber"
+                                            name="phonenumber" value="" size="60" maxlength="128"></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope-o"
+                                                aria-hidden="true"></i></span><input placeholder="Địa chỉ thư điện tử"
+                                            class="form-control form-text required" type="text" id="edit-email" name="email"
+                                            value="" size="60" maxlength="128"></div>
+                                </div><input type="hidden" name="nodeId" value="28">
+                                <button type="submit" id="edit-submit" name="op" value="Đăng ký tập thử"
+                                    class="btn btn-default form-submit">Đăng ký tập thử</button>
+                                <input type="hidden" name="form_build_id"
+                                    value="form-7IXDf9G4Q5PP3QU-dwAOmiHAsicYIx-8YXwtUc3UW8Q">
+                                <input type="hidden" name="form_id" value="cassiopeia_regiter_join_today_form">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class=" btn-secondary" data-dismiss="modal"><span
+                                aria-hidden="true">×</span></button>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="z-index: 1007;">
+            <div class="modal-dialog modal-dialog-centered modal-dialog2" role="document">
+                <div class="modal-content modal-content2">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Đăng Nhập</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+    
+                            <div class="input-field">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                                <input type="text" id="name" placeholder="Tên đăng nhập">
+                                <!-- <label for="name">Username</label> -->
+                            </div>
+    
+    
+                            <div class="input-field">
+                                <i class="fas fa-lock" aria-hidden="true"></i>
+                                <input type="password" id="pass" placeholder="Mật khẩu">
+                                <!-- <label for="pass">Password</label> -->
+                            </div>
+    
+    
+                            <div class="left" style="margin-left:20px;">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember Me</label>
+                            </div>
+    
+    
+                            <div class="submit-login">
+                                <input type="submit" value="Login" class="btn btn-large">
+                            </div>
+    
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">x</button>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery3.1.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/index3.js">
+
+    </script>
+</body>
+
+</html>

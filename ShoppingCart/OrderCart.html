@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/odercart.css">
+</head>
+
+<body>
+    <div class="overlay1"></div>
+    <header>
+        <a href="../index3.html" class="logo logo1">Gym <span>Home</span></a>
+        <div class="toggle"><img src="../img/toggle.png" alt=""></div>
+
+    </header>
+    <div class="banner">
+        <!-- navigation -->
+        <nav class="active">
+            <i class="fas fa-times" aria-hidden="true"></i>
+            <div class="logo">
+                <!-- <img src="img/logo.png" alt=""> -->
+                <span class="logo-gym">GYM</span> <span class="logo-home">HOME</span>
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="../index3.html">Trang Chủ</a></li>
+                    <li><a href="../GymHome.html">Gym Home</a></li>
+                    <li><a href="../Lostdate.html">Lịch Tập</a></li>
+                    <li><a href="../Boxing.html">Boxing</a></li>
+                    <li><a href="../HlvGym.html">HLV Gym</a></li>
+                    <li><a href="../Promotion.html">Khuyến Mãi</a></li>
+                    <li><a href="">Tuyển Dụng</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+
+
+                        <i class="fas fa-user" aria-hidden="true"></i>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Đăng Nhập
+                        </button>
+
+
+
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-cart" aria-hidden="true"></i>
+                            <img class="icon-cart" src="../img/giohang.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navigation -->
+        <div class="slider-text">
+
+        </div>
+        <div class="background-banner"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="step-sections " step="1">
+
+
+                    <div class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">Thông tin giao hàng</h2>
+                        </div>
+                        <div class="section-content section-customer-information no-mb">
+
+                            <input name="utf8" type="hidden" value="✓">
+                            <div class="inventory_location_data">
+
+
+                                <input name="customer_shipping_district" type="hidden" value="">
+                                <input name="customer_shipping_ward" type="hidden" value="">
+
+                            </div>
+
+
+                            <p class="section-content-text">
+                                Bạn đã có tài khoản?
+                                <a
+                                    href="/account/login?urlredirect=%2Fcheckouts%2Fcd67a4d58cca462dba213f08fa0f5468%3Fstep%3D1">Đăng
+                                    nhập</a>
+                            </p>
+
+
+                            <div class="fieldset">
+
+
+                                <div class="field field-required">
+                                    <div class="field-input-wrapper">
+                                        <label class="field-label" for="billing_address_full_name"></label>
+                                        <input placeholder="Họ và tên" autocapitalize="off" spellcheck="false"
+                                            class="field-input" size="30" type="text" id="billing_address_full_name"
+                                            name="billing_address[full_name]" value="">
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="field field-required field-two-thirds  ">
+                                    <div class="field-input-wrapper">
+                                        <label class="field-label" for="checkout_user_email"></label>
+                                        <input placeholder="Email" autocapitalize="off" spellcheck="false"
+                                            class="field-input" size="30" type="email" id="checkout_user_email"
+                                            name="checkout_user[email]" value="">
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="field field-required field-third  ">
+                                    <div class="field-input-wrapper">
+                                        <label class="field-label" for="billing_address_phone"></label>
+                                        <input placeholder="Số điện thoại" autocapitalize="off" spellcheck="false"
+                                            class="field-input" size="30" maxlength="11" type="tel"
+                                            id="billing_address_phone" name="billing_address[phone]" value="">
+                                    </div>
+
+                                </div>
+
+
+                                <div class="field field-required  ">
+                                    <div class="field-input-wrapper">
+                                        <label class="field-label" for="billing_address_address1"></label>
+                                        <input placeholder="Địa chỉ" autocapitalize="off" spellcheck="false"
+                                            class="field-input" size="30" type="text" id="billing_address_address1"
+                                            name="billing_address[address1]" value="">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div class="fieldset">
+
+                                <form id="form_update_location" class="clearfix order-checkout__loading"
+                                    accept-charset="UTF-8" method="post">
+                                    <input name="selected_customer_shipping_province" type="hidden" value="">
+                                    <input name="selected_customer_shipping_district" type="hidden" value="">
+                                    <input name="selected_customer_shipping_ward" type="hidden" value="">
+                                    <input name="utf8" type="hidden" value="✓">
+                                    <div class="order-checkout__loading--box">
+                                        <div class="order-checkout__loading--circle"></div>
+                                    </div>
+
+                                    <div class="field field-show-floating-label field-required field-third ">
+                                        <div class="field-input-wrapper field-input-wrapper-select">
+                                            <label class="field-label" for="customer_shipping_province"></label>
+                                            <select class="field-input" id="customer_shipping_province"
+                                                name="customer_shipping_province">
+                                                <option data-code="null" value="null" selected=""> Chọn tỉnh / thành
+                                                </option>
+
+
+
+                                                <option data-code="HC" value="50">Hồ Chí Minh</option>
+
+
+
+                                                <option data-code="HI" value="1">Hà Nội</option>
+
+
+
+                                                <option data-code="DA" value="32">Đà Nẵng</option>
+
+
+
+                                                <option data-code="AG" value="57">An Giang</option>
+
+
+
+                                                <option data-code="BV" value="49">Bà Rịa - Vũng Tàu</option>
+
+
+
+                                                <option data-code="BG" value="15">Bắc Giang</option>
+
+
+
+                                                <option data-code="BK" value="4">Bắc Kạn</option>
+
+
+
+                                                <option data-code="BL" value="62">Bạc Liêu</option>
+
+
+
+                                                <option data-code="BN" value="18">Bắc Ninh</option>
+
+
+
+                                                <option data-code="BT" value="53">Bến Tre</option>
+
+
+
+                                                <option data-code="BD" value="35">Bình Định</option>
+
+
+
+                                                <option data-code="BI" value="47">Bình Dương</option>
+
+
+
+                                                <option data-code="BP" value="45">Bình Phước</option>
+
+
+
+                                                <option data-code="BU" value="39">Bình Thuận</option>
+
+
+
+                                                <option data-code="CM" value="63">Cà Mau</option>
+
+
+
+                                                <option data-code="CN" value="59">Cần Thơ</option>
+
+
+
+                                                <option data-code="CB" value="3">Cao Bằng</option>
+
+
+
+                                                <option data-code="DC" value="42">Đắk Lắk</option>
+
+
+
+                                                <option data-code="DO" value="43">Đắk Nông</option>
+
+
+
+                                                <option data-code="DB" value="7">Điện Biên</option>
+
+
+
+                                                <option data-code="DN" value="48">Đồng Nai</option>
+
+
+
+                                                <option data-code="DT" value="56">Đồng Tháp</option>
+
+
+
+                                                <option data-code="GL" value="41">Gia Lai</option>
+
+
+
+                                                <option data-code="HG" value="2">Hà Giang</option>
+
+
+
+                                                <option data-code="HM" value="23">Hà Nam</option>
+
+
+
+                                                <option data-code="HT" value="28">Hà Tĩnh</option>
+
+
+
+                                                <option data-code="HD" value="19">Hải Dương</option>
+
+
+
+                                                <option data-code="HP" value="20">Hải Phòng</option>
+
+
+
+                                                <option data-code="HU" value="60">Hậu Giang</option>
+
+
+
+                                                <option data-code="HO" value="11">Hòa Bình</option>
+
+
+
+                                                <option data-code="HY" value="21">Hưng Yên</option>
+
+
+
+                                                <option data-code="KH" value="37">Khánh Hòa</option>
+
+
+
+                                                <option data-code="KG" value="58">Kiên Giang</option>
+
+
+
+                                                <option data-code="KT" value="40">Kon Tum</option>
+
+
+
+                                                <option data-code="LI" value="8">Lai Châu</option>
+
+
+
+                                                <option data-code="LD" value="44">Lâm Đồng</option>
+
+
+
+                                                <option data-code="LS" value="13">Lạng Sơn</option>
+
+
+
+                                                <option data-code="LO" value="6">Lào Cai</option>
+
+
+
+                                                <option data-code="LA" value="51">Long An</option>
+
+
+
+                                                <option data-code="ND" value="24">Nam Định</option>
+
+
+
+                                                <option data-code="NA" value="27">Nghệ An</option>
+
+
+
+                                                <option data-code="NB" value="25">Ninh Bình</option>
+
+
+
+                                                <option data-code="NT" value="38">Ninh Thuận</option>
+
+
+
+                                                <option data-code="PT" value="16">Phú Thọ</option>
+
+
+
+                                                <option data-code="PY" value="36">Phú Yên</option>
+
+
+
+                                                <option data-code="QB" value="29">Quảng Bình</option>
+
+
+
+                                                <option data-code="QM" value="33">Quảng Nam</option>
+
+
+
+                                                <option data-code="QG" value="34">Quảng Ngãi</option>
+
+
+
+                                                <option data-code="QN" value="14">Quảng Ninh</option>
+
+
+
+                                                <option data-code="QT" value="30">Quảng Trị</option>
+
+
+
+                                                <option data-code="ST" value="61">Sóc Trăng</option>
+
+
+
+                                                <option data-code="SL" value="9">Sơn La</option>
+
+
+
+                                                <option data-code="TN" value="46">Tây Ninh</option>
+
+
+
+                                                <option data-code="TB" value="22">Thái Bình</option>
+
+
+
+                                                <option data-code="TY" value="12">Thái Nguyên</option>
+
+
+
+                                                <option data-code="TH" value="26">Thanh Hóa</option>
+
+
+
+                                                <option data-code="TT" value="31">Thừa Thiên Huế</option>
+
+
+
+                                                <option data-code="TG" value="52">Tiền Giang</option>
+
+
+
+                                                <option data-code="TV" value="54">Trà Vinh</option>
+
+
+
+                                                <option data-code="TQ" value="5">Tuyên Quang</option>
+
+
+
+                                                <option data-code="VL" value="55">Vĩnh Long</option>
+
+
+
+                                                <option data-code="VT" value="17">Vĩnh Phúc</option>
+
+
+
+                                                <option data-code="YB" value="10">Yên Bái</option>
+
+
+
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="field field-show-floating-label field-required field-third ">
+                                        <div class="field-input-wrapper field-input-wrapper-select">
+                                            <label class="field-label" for="customer_shipping_district"></label>
+                                            <select class="field-input" id="customer_shipping_district"
+                                                name="customer_shipping_district">
+                                                <option data-code="null" value="null" selected="">Chọn quận / huyện
+                                                </option>
+
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="field field-show-floating-label field-required  field-third  ">
+                                        <div class="field-input-wrapper field-input-wrapper-select">
+                                            <label class="field-label" for="customer_shipping_ward"></label>
+                                            <select class="field-input" id="customer_shipping_ward"
+                                                name="customer_shipping_ward">
+                                                <option data-code="null" value="null" selected="">Chọn phường / xã
+                                                </option>
+
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </form>
+
+                            </div>
+                            <div class="section-content section-customer-information fieldset"
+                                id="div_country_not_vietnam" style="display: none;">
+                                <div class="field field-two-thirds">
+                                    <div class="field-input-wrapper">
+                                        <label class="field-label" for="billing_address_city">Thành phố</label>
+                                        <input placeholder="Thành phố" autocapitalize="off" spellcheck="false"
+                                            class="field-input" size="30" type="text" id="billing_address_city"
+                                            name="billing_address[city]" value="">
+                                    </div>
+                                </div>
+                                <div class="field field-third">
+                                    <div class="field-input-wrapper">
+                                        <label class="field-label" for="billing_address_zip">Mã bưu chính</label>
+                                        <input placeholder="Mã bưu chính" autocapitalize="off" spellcheck="false"
+                                            class="field-input" size="30" type="text" id="billing_address_zip"
+                                            name="billing_address[zip]" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="change_pick_location_or_shipping">
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 colll">
+                <div class="order-cart"></div>
+                <div class="fieldset flises2">
+                    <div class="field">
+                        <div class="field-input-btn-wrapper">
+                            <div class="field-input-wrapper">
+                                <label class="field-label" for="discount.code">Mã giảm giá</label>
+                                <input placeholder="Mã giảm giá" class="field-input" data-discount-field="true"
+                                    autocomplete="off" autocapitalize="off" spellcheck="false" size="30" type="text"
+                                    id="discount.code" name="discount.code" value="">
+                            </div>
+                            <button type="submit" class="field-input-btn btn btn-default btn-disabled">
+                                <span class="btn-content">Sử dụng</span>
+                                <i class="btn-spinner icon icon-button-spinner"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+             <div class="table">
+                <table class="">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span class="visually-hidden">Mô tả</span></th>
+                            <th scope="col"><span class="visually-hidden">Giá</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="total-line total-line-subtotal">
+                            <td class="total-line-name">Tạm tính</td>
+                            <td class="total-line-price">
+                                <span class="total">
+                                    
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr class="total-line total-line-shipping">
+                            <td class="total-line-name">Phí vận chuyển</td>
+                            <td class="total-line-price">
+                                <span class="order-summary">
+                                    
+                                        0
+                                    
+                                </span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                    <tfoot class="total-line-table-footer">
+                        <tr class="total-line">
+                            <td class="total-line-name payment-due-label">
+                                <span class="payment-due-label-total">Tổng cộng</span>
+                            </td>
+                            <td class="total-line-name payment-due">
+                                <span class="payment-due-currency">$</span>
+                                <span class="total">
+                                   
+                                </span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+             </div>
+            
+            
+            </div> 
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <a href="#"><i class="fa fa-angle-up back-top" style="display: none;"></i></a>
+    <!--FOODTER-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- foodter -->
+    <footer class="main-footer">
+        <div class="container-fluid">
+            <div class="row row-foodter">
+                <div class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12"> <a href="#">
+                        <h2 class="logo_name">GYM <span class="white_text">HOME </span> </h2>
+                    </a>
+                    <div class="widget-about">
+                        <p>ligula sed porta cursus, lectus ligula interdum tortor, vitae tempor leo eros lobortis ante.
+                            Integer semper, metus in tincidunt euismod.</p>
+                        <div class="social"><a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter"
+                                href="#"></a>
+                            <a class="fa fa-instagram" href="#"></a> <a class="fa fa-google-plus" href="#"></a></div>
+                    </div>
+                </div>
+                <div class="footer-widget quick-links col-md-2 col-sm-6 col-xs-12 ">
+                    <h4>LINKS</h4>
+                    <div class="widget-link">
+                        <ul>
+                            <li> <a href="../index.html">Home</a></li>
+                            <li> <a href="../about.html">About Us</a></li>
+                            <li> <a href="../classes.html">Coueses</a></li>
+                            <li> <a href="../shedule.html">Schedule</a></li>
+                            <li> <a href="../blogpage.html">Blog</a></li>
+                            <li> <a href="../contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-widget latest-work col-md-4 col-sm-6 col-xs-12 ">
+                    <h4>Instagram</h4>
+                    <div class="widget-post">
+                        <div class="clearfix">
+                            <figure class="image"><a href="#"><img
+                                        src="https://img.webthethao.vn/images/fullsize/2020/01/20/bi-quyet-an-tap-cuc-pham-cua-nu-hoang-phong-gym-trang-tracy-cho-tet-canh-ty-2020.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://www.elleman.vn/wp-content/uploads/2018/12/02/bai-tap-gym-elle-man-featured-image.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://swequity.vn/wp-content/uploads/2020/03/phong-gym-tot-o-ha-noi-1024x685.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://thegioidotap.vn/content/wp-content/uploads/2019/10/lich-tap-Gym-va-huong-dan-chi-tiet-ve-giao-an-tap-Gym-giam-can-tang-co-cho-nam-1.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://i-suckhoe.vnecdn.net/2019/01/08/37512123-1616778381766794-4555318038705995776-o-1546932036_680x0.jpg"
+                                        alt=""></a></figure>
+                            <figure class="image"><a href="#"><img
+                                        src="https://lh3.googleusercontent.com/proxy/u7k8_qYbGNdMWuNxmTQkGtjgSU3L5-oUOT8979ex7PJT-1Ry88u-iqIJ7eK2a7Y0lU_L_m9glDK5OdnTvhvjiUa8kGksgfjOhfUCPguRze4bovRNHFo0zEwPww"
+                                        alt=""></a></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widget address col-md-3 col-sm-6 col-xs-12">
+                    <h4>Contact us</h4>
+                    <div class="widget-content">
+                        <div class="address_box">
+                            <p><i class="fa fa-phone"></i>0333765265</p>
+                        </div>
+                        <div class="address_box">
+                            <p><i class="fa fa-envelope"></i>Tungnguyenvan9296@</p>
+                        </div>
+                        <div class="address_box1">
+                            <p><i class="fa fa-map-marker"></i> 1011Santa Monica <br>
+                                boulevard Los Angeles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="auto-container text-center">© 2020 <a href="#">GYMHOME.</a> With All rights reserved.</div>
+        </div>
+    </footer>
+    <!-- foodter -->
+    <button id="topBtn"><a href="#"><i class="fa fa-angle-up back-top" style="display: inline;"></i></a></button>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../js/jquery3.1.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="orderCart.js">
+    </script>
+</body>
+
+</html>
